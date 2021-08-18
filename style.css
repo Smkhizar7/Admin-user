@@ -1,0 +1,90 @@
+.body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: royalblue;
+    font-family: serif;
+    /* font-size: larger; */
+}
+
+.container-fluid.col-6.box {
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    background: #ffffff00;
+    justify-content: space-evenly;
+    font-weight: 700;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px 6px;
+    align-content: center;
+}
+
+button.btn {
+    margin: 10px;
+}
+
+.bigbtn {
+    padding: 1.375rem 1.75rem !important;
+}
+
+a {
+    color: white !important;
+}
+
+p {
+    font-weight: 500;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+button.btn {
+    font-weight: 700;
+    font-size: large;
+}
+
+.hidden {
+    display: none;
+}
+
+div.alert {
+    padding: 10px !important;
+}
+
+.dropdown-menu {
+    top: 80% !important;
+    right: 0px !important;
+    left: auto !important;
+}
+
+a.dropdown-item {
+    color: #212529 !important;
+}
+
+.form-inline.my-2.my-lg-0 {
+    font-size: large;
+    font-weight: 500;
+    color: white;
+}
+
+div#content {
+    width: 70%;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+}
+
+a#navbarDropdown {
+    text-decoration: none;
+}
