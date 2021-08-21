@@ -9,9 +9,26 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/87db91fa89.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-storage.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyB8BwrxU2ntblFkyzkFvN73PQjhzo0QKqI",
+            authDomain: "quiz-2932f.firebaseapp.com",
+            databaseURL: "https://quiz-2932f-default-rtdb.firebaseio.com",
+            projectId: "quiz-2932f",
+            storageBucket: "quiz-2932f.appspot.com",
+            messagingSenderId: "500399897029",
+            appId: "1:500399897029:web:9f26b26658b91cbd23b3ac",
+            measurementId: "G-K39Q85YY56"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
 </head>
 
-<body onload="user()">
+<body>
     <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
         <a class="navbar-brand" href="./index.html">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,13 +59,15 @@
         <h1>Dashboard</h1>
         <br>
         <div id="div1">
-
+            <img src="" alt="xyz" width="80px" height="80px" id="img">
+            <input type="file" name="file" id="file">
+            <button onclick="send()" class="btn btn-primary">Upload</button>
         </div>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="./user-panel.js"></script>
 </body>
 
 </html>

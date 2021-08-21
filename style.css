@@ -1,20 +1,23 @@
 .body {
     display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
     width: 100vw;
     height: 100vh;
-    background: royalblue;
+    /* background: royalblue; */
+    background-image: url(https://images.unsplash.com/photo-1566233601708-73237226554c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=794&q=80);
     font-family: serif;
     /* font-size: larger; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container-fluid.col-6.box {
     padding: 20px;
     display: flex;
+    margin: 20px;
     flex-wrap: nowrap;
-    background: #ffffff00;
+    background: #28a745a8;
     justify-content: space-evenly;
     font-weight: 700;
     flex-direction: column;
@@ -87,4 +90,9 @@ div#content {
 
 a#navbarDropdown {
     text-decoration: none;
+}
+
+.error {
+    color: red;
+    font-size: medium;
 }
